@@ -22,7 +22,7 @@ html, body{
     src:url(../fonts/Sintony-Regular-webfont.ttf) format('truetype');
 }
 a {
-  color: #a89574;
+  color: #a89574; /* or #e05c5c? */
 }
 a:hover {
   color: #a89574;
@@ -120,6 +120,9 @@ span.menu {
   text-decoration: none;
   font-family: 'SintonyRegular';
 }
+.logo p {
+  color: #a7a7a7;
+}
 span.logo-clr {
   font-weight: 400;
   color: #a89574;
@@ -140,7 +143,7 @@ span.logo-clr {
 	position: absolute;
 	top: 100%;
 	content: attr(data-hover);
-	font-weight: 500;
+	font-weight: 400;
 	-webkit-transform: translate3d(0,0,0);
 	-moz-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
@@ -163,9 +166,14 @@ span.logo-clr {
 /*--header end here--*/
 /*--banner start here--*/
 .banner {
-  background: url(../img/parked_bike.jpg)no-repeat;
+  background: url(../img/paris-dorm.jpg)no-repeat;
   min-height: 700px;
   background-size: cover;
+  background-position: bottom;
+  /*opacity: 0.8;*/
+  /*transition: opacity .25s ease-in-out;*/
+  /*-moz-transition: opacity .25s ease-in-out;*/
+  /*-webkit-transition: opacity .25s ease-in-out;*/
 }
 .banner-main {
   padding: 19em 0em 0em 0em;
@@ -217,6 +225,12 @@ span.logo-clr {
   font-size: 1em;
   font-weight: 400;
   color: #777;
+}
+.banner-small {
+  background: url(../img/paris-dorm.jpg)no-repeat;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
 }
 .ban-bot-btn {
   margin: 1.7em 0em 0em 0em;
@@ -584,7 +598,7 @@ div#portfoliolist {
 /*--process end here--*/
 /*--footer start here--*/
 .footer {
-  padding: 1em 0em 1em 0em;
+  padding: 0.5em 0em 0.5em 0em;
   background:#393939;
 }
 .footer-news h5 {
@@ -704,6 +718,9 @@ ul.ftr-socialicons li a.print:hover {
   width: 80%;
   margin: 0 auto;
 }
+.about-grant-detailed p {
+  text-align: justify;
+}
 .about-wedo {
   color: #818181;
 }
@@ -713,6 +730,9 @@ ul.ftr-socialicons li a.print:hover {
 .about-wedo h5 {
   margin-top: 1;
   font-size: 1em;
+}
+.about-grant {
+  padding: 1em 0em 1em 0em;
 }
 .about-wedo-right h4 a{
   font-size: 1.1em;
